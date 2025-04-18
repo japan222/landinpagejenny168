@@ -1,83 +1,312 @@
+
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Jenny168</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
-      font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-    }
-    .mobile-wrapper {
-      width: 390px;
-      padding: 20px 0;
-    }
-    .logo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
-    .button1 {
-    width: 240px;
-    height: 100px;
-    display: block;
-    margin: 0 auto 0px auto;  /* จัดกลางแนวนอน + เว้นด้านล่าง */
-    border-radius: 8px;
-    }
-    .button2 {
-    width: 240px;
-    height: 100px;
-    display: block;
-    margin: 0 auto 20px auto;  /* จัดกลางแนวนอน + เว้นด้านล่าง */
-    border-radius: 8px;
-    }
-    .promo-img {
-      width: 100%;
-      display: block;
-      margin-bottom: 12px;
-      border-radius: 8px;
-    }
-  </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '');
+        fbq('track', 'PageView');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homer's Odyssey</title>
+    <meta property="og:description"
+        content="หนึ่งในเรื่องราวที่ดีที่สุดที่เคยเขียนมา มาเป็นเกมการเล่าเรื่องอินเตอร์เอเชียตฟรี จับขึ้นในการเดินทางอันตรายในโลกมิธโลจิกของกรีกโบราณ ท่ามกลางความโกรธของโปเซิดอน การจัดการกับมนต์ ปริศนาและทําลายคู่แข่งของคุณในเกมการ์ดมหัศจรรย์ คุณจะสามารถเรียกคืนพระบรมของคุณหรือไม่">
+    <meta property="og:title" content="Homer's Odyssey">
+    <meta property="og:image" content="img/header.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
+
 <body>
+    <!-- Navbar -->
+    
+    <nav id="navbar">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#about">เกี่ยวกับ</a></li>
+            <li><a href="#requirements">ความต้องการ</a></li>
+            <li><a href="#contact">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
 
-  <div class="mobile-wrapper">
-    <!-- โลโก้กลม -->
-    <a href="https://auto.jenny168.com/login" target="_blank">
-        <img src="images/logo.jpg" alt="LOGO images" class="logo">
-      </a>
 
-      <a href="https://lin.ee/s4zPO1z" target="_blank">
-        <img src="images/button1.png" alt="ติดต่อแอดมิน" class="button1">
-      </a>
-      
-      <a href="https://auto.jenny168.com/register" target="_blank">
-        <img src="images/button2.png" alt="สมัครสมาชิก" class="button2">
-      </a>
-      
-      <a href="https://auto.jenny168.com/register" target="_blank">
-        <img src="images/promo-1.jpg" alt="โปรสมาชิกใหม่" class="promo-img">
-      </a>
-      
-      <a href="https://auto.jenny168.com/register" target="_blank">
-        <img src="images/promo-2.jpg" alt="สมัครสมาชิก" class="promo-img">
-      </a>
-      
-      <a href="https://auto.jenny168.com/register" target="_blank">
-        <img src="images/promo-3.jpg" alt="สมัครผ่าน LINE" class="promo-img">
-      </a>
-  </div>
+    <!-- Hero Section -->
+    
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Homer's Odyssey</h1>
+                <p class="hero-description">หนึ่งในเรื่องราวที่ดีที่สุดที่เคยเขียนมา มาเป็นเกมการเล่าเรื่องอินเตอร์เอเชียตฟรี จับขึ้นในการเดินทางอันตรายในโลกมิธโลจิกของกรีกโบราณ ท่ามกลางความโกรธของโปเซิดอน การจัดการกับมนต์ ปริศนาและทําลายคู่แข่งของคุณในเกมการ์ดมหัศจรรย์ คุณจะสามารถเรียกคืนพระบรมของคุณหรือไม่</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="cta-button primary">เริ่มเล่นเลย</a>
+                    <a href="#requirements" class="cta-button secondary">ดูรายละเอียด</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3.6</span>
+                        <span class="stat-label">คะแนนรีวิว</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1K+</span>
+                        <span class="stat-label">ผู้เล่น</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2024</span>
+                        <span class="stat-label">เกมยอดเยี่ยม</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/header.jpg" alt="Homer's Odyssey" class="main-image">
+                    <img src="img/header.jpg" alt="Background Effect" class="bg-effect">
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-circle"></div>
+                    <div class="floating-square"></div>
+                </div>
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section> 
 
+
+    <!-- About Section -->
+    
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="section-title">เกี่ยวกับเรา</h2>
+            
+            <!-- First Content Block -->
+            <div class="content-block">
+                <div class="content-image">
+                    <img src="img/s1.jpg" alt="Background" class="background-image">
+                    <div class="image-grid">
+                        <div class="grid-item">
+                            <img src="img/s2.jpg" alt="Tony Hawk Gameplay 1">
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/s3.jpg" alt="Tony Hawk Gameplay 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-info" data-aos="fade-up">
+                    <h3 class="content-title">สัมผัสประสบการณ์ Homer's Odyssey ระดับตำนาน</h3>
+                    <p class="content-text">เกม Homer's Odyssey เป็นเกมการเล่าเรื่องอินเตอร์เทอคทีวีที่ได้รับแรงบันดาลใจจากหนึ่งในบทกวียอดนิยมเกรีกโบราณที่เขียนโดย Homer โดยผสมผสมชุดการเล่นจากชนิดเกมการท่ามกลางและเกมการ์ด.เกมคลาสสิกที่ไม่ผ่านเวลา เหมาะสําหรับทุกคน โดยเล่าเรื่องของ Odysseus the Cunning - จิตใจผู้มีความรู้ด้านหลังม้าทรออันแรง - และการต่อสู้ 10 ปีของเขาเพื่อกลับบ้านหลังจบสงคราม. RELIVE THE MYTH: ประสบการณ์การท่ามกลางเกมคลาสสิกมากกว่า 10 ชั่วโมงผ่านภาพวาดภาพอิเล็กทรอนิกส์, การเล่าเรื่อง, การพูดคุย, การเรียนรู้, การสํารวจ, การแสดงเสียง, ปราศิลและเกมการ์ดคู่ต่อสู้.DEFEAT YOUR ENEMIES: รวบรวมการ์ด, เลือกพวกเขาและเลือกเกมของคุณเพื่อท้ามตีความซึ้งในคู่ต่อสู้รุนแรง. PROTAGON: รับบทกวียอดนิยมของ Odysseus, การใช้บทบทความซึ้งและประสบการณ์ของตนเองที่ไม่ทันสมควรและการใช้ในเกมที่มีความรู้ของมนุษย์ในเกมที่โด่งดังในเกมกลางทะเลและการ์ด:</p>
+                    <a href="#" class="learn-more">อ่านเพิ่มเติม <span class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <!-- Second Content Block -->
+            <div class="content-block reverse">
+                <div class="content-image">
+                    <img src="img/s4.jpg" alt="Background" class="background-image">
+                    <div class="image-grid">
+                        <div class="grid-item">
+                            <img src="img/s5.jpg" alt="Tony Hawk Gameplay 3">
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/s6.jpg" alt="Tony Hawk Gameplay 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-info" data-aos="fade-up">
+                    <h3 class="content-title">โหมดการเล่นที่หลากหลาย</h3>
+                    <p class="content-text">เพิ่มเติมความต้องการของ Hell Architectข้อมูลเกมเกมHomers Odyssey เป็นเกมการเล่าเรื่องอินเตอร์เทอคทีวีที่ได้รับแรงบันดาลใจจากหนึ่งในบทกวียอดนิยมเกรีกโบราณโบราณที่เขียนโดย Homer โดยผสมผสานของเกมการเล่นจากชนิดเกมการท่ามกลางและเกมการ์ด.เกมคลาสสิกที่ไม่มีเวลา เหมาะสําหรับทุกคน โดยเล่าเรื่องของ Odysseus the Cunning - จิตใจผู้สร้างม้าทรออานและความพยายามของเขา 10 ปีในการกลับบ้านหลังจากจบสงคราม. RELIVE THE MYTH: ประสบการณ์มากกว่า 10 ชั่วโมงของการท่ามกลางแบบคลาสสิกผ่านภาพวาดภาพอิเล็ก ๆ, การเล่าเรื่อง, การโต้ตอบ, การสืบสวนดนตรี, การแสดง, การเล่นปริศนาและการเล่นคู่บอลไพ่.DEFEAT YOUR ENEMIES: รวบรวมไพ่, การปรับปรุงและการเลือกเกมเพื่อท่ามกลางโลกในคู่บอล.</p>
+                    <a href="#" class="learn-more">อ่านเพิ่มเติม <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Requirement Section -->
+    
+    <section id="requirements" class="requirements-section">
+        <div class="requirements-container">
+            <h2 class="section-title">ความต้องการของระบบ</h2>
+            <div class="requirements-grid">
+                <div class="requirement-card minimum">
+                    <div class="card-header">
+                        <span class="card-icon">⚡</span>
+                        <h3 class="requirement-title">ขั้นต่ำ</h3>
+                    </div>
+                    <ul class="requirement-list">
+                        <li>
+                            <span class="spec-label">ระบบ</span>
+                            <span class="spec-value">64 บิต</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">OS</span>
+                            <span class="spec-value">Windows 10</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">CPU</span>
+                            <span class="spec-value">AMD FX6300 / i3-4340</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">RAM</span>
+                            <span class="spec-value">8 GB</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">GPU</span>
+                            <span class="spec-value">AMD HD 7950 / GTX 660</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">DirectX</span>
+                            <span class="spec-value">Version 11</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Storage</span>
+                            <span class="spec-value">24 GB</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="requirement-card recommended">
+                    <div class="card-header">
+                        <span class="card-icon">🎮</span>
+                        <h3 class="requirement-title">แนะนำ</h3>
+                    </div>
+                    <ul class="requirement-list">
+                        <li>
+                            <span class="spec-label">ระบบ</span>
+                            <span class="spec-value">64 บิต</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">OS</span>
+                            <span class="spec-value">Windows 10</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">CPU</span>
+                            <span class="spec-value">Ryzen 5 1600X / i5-2500K</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">RAM</span>
+                            <span class="spec-value">12 GB</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">GPU</span>
+                            <span class="spec-value">RX 390 / GTX 970</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">DirectX</span>
+                            <span class="spec-value">Version 11</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Storage</span>
+                            <span class="spec-value">24 GB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+
+    <!-- Contact Section -->
+    
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">ติดต่อเรา</h2>
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <div class="header-icon">📨</div>
+                        <h3>ส่งข้อความถึงเรา</h3>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">ชื่อ-สกุล</label>
+                                <input type="text" id="name" name="name" placeholder="กรุณากรอกชื่อ-สกุล" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">เบอร์โทร</label>
+                                <input type="tel" id="phone" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">อีเมล</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ข้อความ</label>
+                            <textarea id="message" name="message" rows="4" placeholder="กรุณากรอกข้อความที่ต้องการสอบถาม"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>ส่งข้อความ</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- LINE Contact -->
+                <div class="line-contact-wrapper">
+                    <div class="line-header">
+                        <div class="header-icon">💬</div>
+                        <h3>ติดต่อผ่าน LINE</h3>
+                    </div>
+                    <div class="line-content">
+                        <div class="qr-section">
+                            <!-- <img src="path/to/qr-code.png" alt="LINE QR Code" class="qr-code"> -->
+                            <div class="line-add-friend">
+                                <a href="#" class="line-btn" onclick="trackLead()">
+                                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="line-info">
+                            <p>สแกน QR Code เพื่อเพิ่มเพื่อน หรือคลิกที่ปุ่มด้านบน</p>
+                            <div class="line-links">
+                                <a href="https://line.me/" class="line-link">
+                                    <i class="fab fa-line"></i>
+                                    <span>เกี่ยวกับ LINE</span>
+                                </a>
+                                <a href="https://line.me/download" class="line-link">
+                                    <i class="fas fa-download"></i>
+                                    <span>ดาวน์โหลด</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        function trackLead() {
+            fbq('track', 'Lead');
+        }
+    </script>
+
+    <script>
+        setTimeout(function() {
+            fbq('track', 'ViewContent');
+        }, 8000);
+    </script>
 </body>
+
 </html>
